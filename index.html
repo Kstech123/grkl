@@ -11,85 +11,38 @@
   </head>
   <body>
 
-   <section class="header">
+   <section class="sub-header">
      <nav>
-       <a href="https://todaytechfact.club/"><img src="img/our-logo.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
+       <a href="index.html"><img src="img/logo.png" alt="our-logo"></a>
        <div class="nav-links" id="navLinks">
          <i class="fa fa-times" onclick="hideMenu()"></i>
          <ul>
-           <li><a href="https://www.todaytechfact.club/">HOME</a></li>
-           <li><a href="https://www.todaytechfact.club/#services">SERVICES</a></li>
-           <li><a href="/about.html">ABOUT</a></li>
-           <li><a href="/contact.html">CONTACT</a></li>
-           <li><a href="/career.html">CAREER</a></li>
+           <li><a href="#services">SERVICES</a></li>
+           <li><a href="#contact">CONTACT</a></li>
+           <li><a href="#about">ABOUT</a></li>
          </ul>
        </div>
        <i class="fa fa-bars" onclick="showMenu()"></i>
      </nav>
-
-<div class="text-box">
-  <h1>Sumit Pingle <br>&<br> Associates</h1>
-  <p>We invite you to discover and experience the power of our services.</p>
-</div>
-
+     <h1>Birthday Bite</h1>
    </section>
 
-<!--Facilities-->
+<!--about us content-->
 
-<section class="facilities" id="services">
-  <h2>Our Services</h2>
+<section class="about-us">
 
   <div class="row">
-    <div class="facilities-col">
-      <a href="/accounting.html"><h3 style="color:#000;">Accounting</h3></a>
-      <a href="/accounting.html"><img src="img/accounting.jpg" alt="Accounting"></a>
+    <div class="about-col">
+      <h1>We are the best world's largest university</h1>
+      <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, Javascript and you are good to go. Making website is now one of the easiest thing in the world.</p>
+        <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
     </div>
-    <div class="facilities-col">
-      <a href="/company-law-matters.html"><h3 style="color:#000;">Company Law Matters</h3></a>
-      <a href="/company-law-matters.html"><img src="img/company-law-matters.jpg" alt="Company Law Matters"></a>
-    </div>
-    <div class="facilities-col">
-      <a href="/financial-planning.html"><h3 style="color:#000;">Financial Planning</h3></a>
-      <a href="/financial-planning.html"><img src="img/financial-planning.jpg" alt="Financial Planning"></a>
-    </div>
+    <div class="about-col">
+      <img src="img/pizza.jpg" alt="">
   </div>
-  
-  <div class="row">
-    <div class="facilities-col">
-      <a href="/direct-tax.html"><h3 style="color:#000;">Direct Tax</h3></a>
-      <a href="/direct-tax.html"><img src="img/direct-tax.jpg" alt="Direct Tax"></a>
-    </div>
-    <div class="facilities-col">
-      <a href="/indirect-tax.html"><h3 style="color:#000;">Indirect Tax</h3></a>
-      <a href="/indirect-tax.html"><img src="img/indirect-tax.jpg" alt="Indirect Tax"></a>
-    </div>
-    <div class="facilities-col">
-      <a href="/business-registration.html"><h3 style="color:#000;">Business Registration</h3></a>
-      <a href="/business-registration.html"><img src="img/project-reports.jpg" alt="Business Registration"></a>
-    </div>
-  </div>
-
 
 </section>
-
-<div class="b-b"></div>
-
-<!--blog-->
-<section class="contain">
-<h2>News</h2>
-
-<div class="row">
-<div class="contain-col">
-<a href="/new-pan-card.html"><h3>How To Apply For A New Pan Card</h3></a>
-<a href="/new-pan-card.html"><img src="img/pan-card.jpeg" alt="Pan Card Image"/></a>
-<p style="text-align:justify">This form should be used only if the applicant is an individual resident Indian citizen and has never applied for a Permanent Account Number (PAN) or does not have PAN allotted to him / her.</p>
-<a href="/new-pan-card.html" class="hero-btn" style="border: 1px solid #f44336;
-  background: #f44336; text-align: center;">READ MORE</a>
-</div>
-</div>
-
-</section> 
-
+  
 <div class="b-b"></div>       
 
 <!--testimonials-->
@@ -125,27 +78,27 @@
   </div>
 
 </section>
-
+  
 <div class="b-b"></div>
 
 <!--Call to Action-->
 <section class="cta">
   <h3>To Get More Information</h3>
   <a href="/contact.html" class="hero-btn">CONTACT US NOW</a>
-</section>
-
+</section>  
 
 <!--Footer-->
 
 <section class="footer">
-  <h3>Follow Us On</h3>
+  <h4>About Us</h4>
+  <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.</p>
   <div class="icons">
     <i class="fa fa-facebook"></i>
     <i class="fa fa-instagram"></i>
     <i class="fa fa-twitter"></i>
     <i class="fa fa-pinterest"></i>
   </div>
-  <p>Made with <i class="fa fa-heart"></i> by KSTECH</p>
+  <p>Made with <i class="fa fa-heart-o"></i> by KSTECH</p>
 </section>
 
 
@@ -154,10 +107,10 @@
 
 var navLinks = document.getElementById("navLinks")
 function showMenu(){
-  navLinks.style.right = "0";
+  navLinks.style.left = "0";
 }
 function hideMenu(){
-  navLinks.style.right = "-200px";
+  navLinks.style.left = "100%";
 }
 </script>
 
