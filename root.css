@@ -510,7 +510,13 @@ h3{
   }
 
 @media (min-width: 701px){
-.hide{
+.hide-l{
+   display: none;
+ }
+}
+
+@media (max-width: 701px){
+.hide-s{
    display: none;
  }
 }
