@@ -507,3 +507,9 @@ h3{
 .ab a{
   color: #000;
   }
+
+@media (min-width: 701px){
+.hide{
+   display: none;
+ }
+}
