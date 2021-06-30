@@ -126,13 +126,15 @@ nav .fa{
   text-align: center;
   padding-top: 100px;
 }
+h1,h2,h3,h4,h5,h6{
+text-align: center;
+}
 
 h2,h3 .u{
 text-decoration: underline;
 text-underline-offset: 10px;
 text-decoration-thickness: 2px;
 text-decoration-color: #000;
-text-align: center;
 }
 
 h1{
