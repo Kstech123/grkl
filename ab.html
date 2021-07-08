@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <style>
     @media (max-width: 700px){
 .ssimg{
    margin-top: -55px;
@@ -40,7 +42,7 @@
 
      <h2>OUR PRODUCTS</h2> 
   
-     <div class="row">
+     <div class="row" data-aos="zoom-in-up">
     <div class="about-col">
       <h3>CAKE</h3>
       <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius,</p>
@@ -52,7 +54,7 @@
   </div>
  </div>   
     
-  <div class="row">
+  <div class="row" data-aos="zoom-in-up">
     <div class="about-col hide-s">
       <img src="img/pizza.jpg" style="border-radius: 15px;" alt="" height="225">
   </div>
@@ -68,7 +70,7 @@
   </div>
  </div>
 
-<div class="row">
+<div class="row" data-aos="zoom-in-up">
     <div class="about-col">
       <h3>COLD COFFEE</h3>
       <p style="text-align:justify">one's of the easiest thing in the world. You just need to learn HTML, C
@@ -81,7 +83,7 @@
   </div>
  </div>
 
- <div class="row">
+ <div class="row" data-aos="zoom-in-up">
     <div class="about-col hide-s">
       <img src="img/ice-cream.jpg" style="border-radius: 15px;" alt="" height="225">
   </div>
@@ -97,7 +99,7 @@
   </div>
  </div>
 
-<div class="row">
+<div class="row" data-aos="zoom-in-up">
     <div class="about-col">
       <h3>JUICE</h3>
       <p style="text-align:justify">one's of the easiest thing in the world. You just need to learn HTML, C
@@ -110,7 +112,7 @@
   </div>
  </div>
 
- <div class="row">
+ <div class="row" data-aos="zoom-in-up">
     <div class="about-col hide-s">
       <img src="img/pizza.jpg" style="border-radius: 15px;" alt="" height="225">
   </div>
@@ -131,7 +133,7 @@
 
 <!--about us content-->
 
-<section class="about-us">
+<section class="about-us" data-aos="zoom-in-up">
 <h2>ABOUT US</h2>
 <div style="text-align:justify">
 <p>Over the years, we have found that a team approach can be an effective method to help clients who have a wide variety of needs as they maneuver through a complex financial-services world.</p>
@@ -158,7 +160,7 @@
   <h2>What Our Client Says</h2>
 
   <div class="row">
-    <div class="testimonial-col">
+    <div class="testimonial-col" data-aos="zoom-in-up">
       <img src="img/3.png" alt="">
       <div>
       <p style="text-align:justify">Due to the quick work and low cost, I have had a great experience in accounting for the last 4 years.</p>
@@ -170,7 +172,7 @@
       <i class="fa fa-star-o"></i>
     </div>
    </div>
-   <div class="testimonial-col testimonial-col-x">
+   <div class="testimonial-col testimonial-col-x" data-aos="zoom-in-up">
      <img src="img/3.png" alt="">
      <div>
      <p style="text-align:justify">Due to the quick work and low cost, I have had a great experience in accounting for the last 4 years.</p>
@@ -206,7 +208,7 @@ Pachora, Maharashtra 424201<br>
 
 <!--Footer-->
 
-<section class="footer">
+<section class="footer" data-aos="zoom-in-up">
   <h4>FOLLOW US ON</h4>
   <div class="icons" style="margin-top: 15px;">
     <a href="https://www.facebook.com/pages/category/Cafe/Birthday-Bites-446852752797221/"><i class="fa fa-facebook"></i></a>
@@ -227,6 +229,10 @@ function hideMenu(){
   navLinks.style.right = "-200px";
 }
 </script>
+
+<script>AOS.init({
+  duration: 1200,
+})</script>
 
   </body>
 </html>
