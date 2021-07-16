@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Page Not Found!</title>
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+   <section class="header">
+     <nav>
+       <a href="https://todaytechfact.club/"><img src="img/our-logo.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
+       <div class="nav-links" id="navLinks">
+         <i class="fa fa-times" onclick="hideMenu()"></i>
+         <ul>
+           <li><a href="https://www.todaytechfact.club/">HOME</a></li>
+           <li><a href="https://www.todaytechfact.club/#services">SERVICES</a></li>
+           <li><a href="/about.html">ABOUT</a></li>
+           <li><a href="/contact.html">CONTACT</a></li>
+           <li><a href="/career.html">CAREER</a></li>
+         </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+
+<div class="text-box">
+  <h1>Oops!</h1>
+  <i class="fa fa-frown-o" style="font-size:200px;color:#f2f2f2;"></i>
+  <p>Sorry, but the page you are looking for doesn't exist.</p>
+  <a href="https://todaytechfact.club/" class="hero-btn">Go To Home</a>
+
+</div>
+
+   </section>
+
+<!--Footer-->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-pinterest"></i>
+  </div>
+  <p>Made with <i class="fa fa-heart"></i> by KSTECH</p>
+</section>
+
+
+<!--javascipt for toggle menu-->
+<script>
+
+var navLinks = document.getElementById("navLinks")
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+</script>
+  </body>
+</html>
