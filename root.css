@@ -552,13 +552,3 @@ h3{
 	text-align: center;
 	margin: 0 auto;
 }
-
-.wcu-1{
-   height: 52px;
-   width: 52px;
-   background-image: url(img/sader.png);
-   background-position: center;
-   padding-top: 25px;
-   background-size: cover;
-   position: relative;
-}
