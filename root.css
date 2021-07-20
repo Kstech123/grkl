@@ -116,6 +116,18 @@ nav .fa{
   .nav-links ul{
     padding: 30px;
   }
+  .nav-links ul li{
+    padding: 35px 0;
+  }
+  .nav-links ul li a{
+    font-size: 23px;
+  }
+  .nav-links ul li a:hover{
+    color: #f44336;
+  }
+  .nav-links ul li:hover:: after{
+    display: none;
+  }
 }
 
 /*-- course --*/
