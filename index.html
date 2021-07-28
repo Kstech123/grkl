@@ -93,20 +93,16 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-.navi {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-}
+.navi{position:relative}
+.qee{position:absolute;top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%)}
 </style>
   </head>
   <body>
 
-   <section class="sub-header w3-container">
+   <section class="sub-header w3-container navi">
      <nav>
        <a href="#"><img src="img/abv.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
        <div class="nav-links" id="navLinks">
@@ -119,7 +115,7 @@ img {vertical-align: middle;}
        </div>
        <i class="fa fa-bars" onclick="showMenu()"></i>
      </nav>
-<h1 class="navi">cafe</h1>
+<h1 class="qee">cafeNj</h1>
    </section>
 	  
 <div class="slideshow-container">
