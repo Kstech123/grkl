@@ -386,14 +386,15 @@ h3{
 }
 
 .about-us{
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
 
-.as h2{
+.as{
   margin-bottom: 40px;
+  width: 90%;
 }
 
 .about-col{
