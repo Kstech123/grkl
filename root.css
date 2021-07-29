@@ -272,8 +272,8 @@ h3{
 .testimonials{
   width: 80%;
   margin: auto;
-  padding-top: 50px;
-  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 .testimonial-col{
   flex-basis: 44%;
