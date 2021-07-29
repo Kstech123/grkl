@@ -1,317 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>e</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Gurukul International School | School in Pachora</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
 <style>
-section {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  padding: 80px 0;
-  border-bottom: 1px solid #4A4A4A;
-  h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 0 12px;
-  }
-  p {
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    padding: 10px 12px;
-  }
-}
-
-.container {
-  width: 100%;
-}
-
-.Accordions {
-  display: block;
-  max-width: 800px;
-  margin: auto;
-}
-
-.Accordion_item {
-  width: 100%;
-  height: auto;
-  margin: 5px 0;
-  &:first-child {
-    margin-top: 50px;
-  }
-  .title_tab {
-    width: 100%;
-    background-color: #51adf6;
-    color: #FCFCFC;
-    padding: 12px 30px;
-    cursor: pointer;
-    transition: background-color .3s ease-in;
-    border-radius:4px;
-    .title {
-      font-size: 24px;
-      letter-spacing: 1px;
-      position: relative;
-      .icon {
-        position: absolute;
-        right: 1%;
-        top: calc(50% - 8px);
-        width: 16px;
-        height: 16px;
-        background-color: transparent;
-        transform: rotate(-90deg);
-        transition: transform 0.3s ease-in;
-        &:before, &:after {
-          content: '';
-          position: absolute;
-          height: 100%;
-          width: 2px;
-          background-color: #FCFCFC;
-        }
-        &:before {
-          top: 0;
-          left: 2px;
-          transform: rotate(-45deg);
-        }
-        &:after {
-          top: 0;
-          right: 2px;
-          transform: rotate(45deg);
-        }
-      }
-    }
-  }
-}
-
-.inner_content {
-  width: 100%;
-  height: auto;
-  display: none;
-  overflow: hidden;
-  p {
-    width: 98%;
-    margin: auto;
-    padding: 18px 15px;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    opacity: 0;
-    transform: translate3d(0px, 60px, 0px);
-    transition: transform 0.6s cubic-bezier(0, 0.99, 0.44, 1.01), opacity 0.8s 0.1s cubic-bezier(0, 0.99, 0.44, 1.01);
-  }
-}
-
-.Accordion_item {
-  .title_tab {
-    &.active {
-      .title .icon {
-        transform: rotate(0deg);
-        transition: transform .3s ease-in;
-      }
-      background-color: #2196F3;
-      transition: background-color .3s ease-in;
-    }
-    &:hover {
-      background-color: #2196F3;
-      transition: background-color .3s ease-in;
-    }
-  }
-  .inner_content p.show {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-    transition: opacity 0.8s cubic-bezier(0, 0.99, 0.44, 1.01), transform 0.6s 0.1s cubic-bezier(0, 0.99, 0.44, 1.01);
-  }
-}
-
-.inner_content p {
-  span {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  b {
-    color: #F44336;
-    font-size: 18px;
-  }
- }
 </style>
-</head>
-<body>
-<section>
-		<h1>FAQ Accordion</h1>
-		<p>This is my work , hope you like it ! - Chris Li</p>
-	</section>
-	<div class="container">
-		<div class="Accordions">
-			<div class="Accordion_item">
-				<div class="title_tab">
-					<h3 class="title">HOW TO BUY<span class="icon"></span></h3>
-				</div>
-				<div class="inner_content">
-					<p>
-						<b>In which countries is it possible to shop online?</b></br>
 
-						<span>You can currently shop in Spain, Portugal, France, Monaco, Italy, Germany, Poland, Austria, Switzerland, Greece, Malta, Romania, Bulgaria, Croatia, Slovenia, Hungary, Czech Republic, Slovakia, Estonia, Latvia, Lithuania, UK, Ireland, Belgium, Holland, Luxembourg, Sweden, Norway, Denmark, Finland, Russia, USA, Canada, Mexico, Japan, Taiwan, Macau, Hong Kong, South Korea, China and Turkey.</span><br>
-
-						<b>How many languages is it possible to browse in?</b></br>
-
-						<span>The XXX.com browsing languages are: English, Spanish, Catalan, Galician, Basque, Portuguese, French, Italian, German, Polish, Greek, Romanian, Bulgarian, Croatian, Czech, Slovak, Estonian, Latvian, Lithuanian, Dutch, Swedish, Norwegian, Danish, Russian, Korean, Japanese, Chinese and Turkish.</span><br>
-
-						<b>Are the online store prices the same as those in my usual XXX store?</b></br>
-
-						<span>Yes, but if there is any difference between the prices shown on the website and those marked on the label on the clothes, the correct price will be the one shown on the purchase ticket.</span><br>
-
-						<b>What is your price adjustment policy?</b></br>
-
-						<span>Price adjustments will not be done for items with a reduced price.</span><br>
-
-					</p>
-				</div>
-			</div>
-			<div class="Accordion_item">
-				<div class="title_tab">
-					<h3 class="title">GENERAL INFORMATION<span class="icon"></span></h3>
-				</div>
-				<div class="inner_content">
-					<p>
-						<b>Are out-of-stock items restocked?</b></br>
-
-						<span>If an item is out of stock, we will try to restock it as soon as possible. If no stock is available, it will be removed from the website.</span><br>
-
-						<b>Will I receive the same product that I see in the photo?</b></br>
-
-						<span>Yes, except in the case of products which are hand crafted in which there may be slight differences in the final product.</span><br>
-
-						<b>Is it possible to receive periodic information via email about XXX's latest new products and offers?</b></br>
-
-						<span>Yes. By simply clicking on Newsletter you will receive information on XXX's latest products, lookbook and events.</span><br>
-
-						<b>Can I cancel my XXX Newsletter subscription?</b></br>
-
-						<span>You can easily cancel your subscription by clicking on the Newsletter menu. Fill in the details and select send.</span><br>
-
-						<b>How do I recover my forgotten password?</b></br>
-
-						<span>If you've forgotten your password, you can recover it in the Log-in section. Enter your e-mail address and we'll send you an e-mail telling you what you need to do.</span><br>
-
-						<b>How can I be sure that I've made my purchase correctly?</b></br>
-
-						<span>Once you have placed your order, you will receive a confirmation email. If you do not receive an email, contact our customer service.</span><br>
-
-						<b>Can I track my order?</b></br>
-
-						<span>Yes. Click on the order menu in your account and you will be able to track your order in real time.</span><br>
-
-						<b>Can I remove items from my order?</b></br>
-
-						<span>Yes. You can delete any unwanted items from your shopping bag as long as the order hasn’t been processed yet.</span><br>
-
-						<b>Can I cancel my order?</b></br>
-
-						<span>Yes. You can cancel your order from the order menu in your account.</span><br>
-
-						<b>What should I do if I receive a faulty item?</b></br>
-
-						<span>XXX.com only sells items in perfect condition so, in the rare event of receiving a faulty item, please contact our customer service.</span><br>
-
-						<b>What should I do if I receive an incorrect item?</b></br>
-
-						<span>If you were to accidentally receive an item that you did not order, please contact our customer service.</span><br>
-					</p>
-				</div>
-			</div>
-			<div class="Accordion_item">
-				<div class="title_tab">
-					<h3 class="title">PAYMENT<span class="icon"></span></h3>
-				</div>
-				<div class="inner_content">
-					<p>
-						<b>How do I recover my forgotten password?</b></br>
-
-						<span>If you've forgotten your password, you can recover it in the Log-in section. Enter your e-mail address and we'll send you an e-mail telling you what you need to do.</span><br>
-
-						<b>How can I be sure that I've made my purchase correctly?</b></br>
-
-						<span>Once you have placed your order, you will receive a confirmation email. If you do not receive an email, contact our customer service.</span><br>
-
-						<b>Can I track my order?</b></br>
-
-						<span>Yes. Click on the order menu in your account and you will be able to track your order in real time.</span><br>
-
-						<b>Can I remove items from my order?</b></br>
-
-						<span>Yes. You can delete any unwanted items from your shopping bag as long as the order hasn’t been processed yet.</span><br>
-
-						<b>Can I cancel my order?</b></br>
-
-						<span>Yes. You can cancel your order from the order menu in your account.</span><br>
-					</p>
-				</div>
-			</div>
-			<div class="Accordion_item">
-				<div class="title_tab">
-					<h3 class="title">DELIVERY<span class="icon"></span></h3>
-				</div>
-				<div class="inner_content">
-					<p>
-						<b>What should I do if I receive a faulty item?</b></br>
-
-						<span>XXX.com only sells items in perfect condition so, in the rare event of receiving a faulty item, please contact our customer service.</span><br>
-
-						<b>What should I do if I receive an incorrect item?</b></br>
-
-						<span>If you were to accidentally receive an item that you did not order, please contact our customer service.</span><br>
-					</p>
-				</div>
-			</div>
-			<div class="Accordion_item">
-				<div class="title_tab">
-					<h3 class="title">RETURNS<span class="icon"></span></h3>
-				</div>
-				<div class="inner_content">
-					<p>
-						<b>Can I cancel my XXX Newsletter subscription?</b></br>
-
-						<span>You can easily cancel your subscription by clicking on the Newsletter menu. Fill in the details and select send.</span><br>
-
-						<b>How do I recover my forgotten password?</b></br>
-
-						<span>If you've forgotten your password, you can recover it in the Log-in section. Enter your e-mail address and we'll send you an e-mail telling you what you need to do.</span><br>
-
-						<b>How can I be sure that I've made my purchase correctly?</b></br>
-
-						<span>Once you have placed your order, you will receive a confirmation email. If you do not receive an email, contact our customer service.</span><br>
-
-						<b>Can I track my order?</b></br>
-
-						<span>Yes. Click on the order menu in your account and you will be able to track your order in real time.</span><br>
-
-						<b>Can I remove items from my order?</b></br>
-
-						<span>Yes. You can delete any unwanted items from your shopping bag as long as the order hasn’t been processed yet.</span><br>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMLMV1PE0T"></script>
 <script>
-	var $titleTab = $('.title_tab');
-	$('.Accordion_item:eq(0)').find('.title_tab').addClass('active').next().stop().slideDown(300);
-	$('.Accordion_item:eq(0)').find('.inner_content').find('p').addClass('show');
-	$titleTab.on('click', function(e) {
-	e.preventDefault();
-		if ( $(this).hasClass('active') ) {
-			$(this).removeClass('active');
-			$(this).next().stop().slideUp(500);
-			$(this).next().find('p').removeClass('show');
-		} else {
-			$(this).addClass('active');
-			$(this).next().stop().slideDown(500);
-			$(this).parent().siblings().children('.title_tab').removeClass('active');
-			$(this).parent().siblings().children('.inner_content').slideUp(500);
-			$(this).parent().siblings().children('.inner_content').find('p').removeClass('show');
-			$(this).next().find('p').addClass('show');
-		}
-	});
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EMLMV1PE0T');
 </script>
+
+  </head>
+  <body>
+
+   <section class="sub-header">
+     <nav>
+       <a href="#"><img src="img/our-logo.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
+       <div class="nav-links" id="navLinks">
+         <i class="fa fa-times" style="text-align: right; font-size: 30px;" onclick="hideMenu()"></i>
+         <ul>
+           <li><a href="#products" onclick="hideMenu()">PRODUCTS</a></li>
+           <li><a href="#contact" onclick="hideMenu()">CONTACT</a></li>
+           <li><a href="#about" onclick="hideMenu()">ABOUT</a></li>
+         </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+     <h1>Gurukul International School</h1>
+   </section>
+
+<!--product content-->
+
+<section class="about-us">
+
+     <h2 id="products">OUR FACILITIES</h2> 
+  
+     <div class="row" data-aos="zoom-in-up">
+    <div class="about-col">
+      <h3>CAKE</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius.</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col">
+      <img src="img/cake.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>   
+    
+  <div class="row" data-aos="zoom-in-up">
+    <div class="about-col hide-s">
+      <img src="img/pizza.jpg" style="border-radius: 15px;" alt="" height="225">
+  </div>
+    <div class="about-col">
+      <h3>PIZZA</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius.</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col hide-l">
+      <img src="img/pizza.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>
+
+<div class="row" data-aos="zoom-in-up">
+    <div class="about-col">
+      <h3>COLD COFFEE</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col">
+      <img src="img/coffee.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>
+
+ <div class="row" data-aos="zoom-in-up">
+    <div class="about-col hide-s">
+      <img src="img/fries.jpg" style="border-radius: 15px;" alt="" height="225">
+  </div>
+    <div class="about-col">
+      <h3>FRIES</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius.</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col hide-l">
+      <img src="img/fries.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>
+
+<div class="row" data-aos="zoom-in-up">
+    <div class="about-col">
+      <h3>JUICE</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius.</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col">
+      <img src="img/juice.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>
+
+ <div class="row" data-aos="zoom-in-up">
+    <div class="about-col hide-s">
+      <img src="img/pizza.jpg" style="border-radius: 15px;" alt="" height="225">
+  </div>
+    <div class="about-col">
+      <h3>SANDWHICH</h3>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius.</p>
+        <center><a href="tel:+91 88888 89112" class="hero-btn red-btn hide-s">ORDER NOW</a></center>
+    </div>
+    <div class="about-col hide-l">
+      <img src="img/sandwhich.jpg" style="border-radius: 15px;" class="ssimg" alt="" height="225">
+      <center><div class="hide-l" style="margin-top:20px"><a href="tel:+91 88888 89112" class="hero-btn red-btn">ORDER NOW</a></div></center>
+  </div>
+ </div>
+</section>
+  
+<div class="b-b"></div>
+
+<section class="about-us" data-aos="zoom-in-up">
+<h2>WHY CHOOSE US</h2>
+<div style="text-align: center">
+
+<div class="bt-icon" style="margin-top: 50px;">
+<span><img src="img/safer.png" height="52px" width="52px" alt="" style="padding-top: 25px;"></span>
+</div>
+<h3>HYGIENE</h3>
+<p>We invite you to discover and experience the power of our services.</p>
+
+
+<div class="bt-icon" style="margin-top: 50px;">
+<span><img src="img/fast-food.png" height="52px" width="52px" alt="" style="padding-top: 25px;"></span>
+</div>
+<h3>TASTY</h3>
+<p>We invite you to discover and experience the power of our services.</p>
+
+<div class="bt-icon" style="margin-top: 50px;">
+<span><img src="img/package.png" height="52px" width="52px" alt="" style="padding-top: 25px;"></span>
+</div>
+<h3>FAST DELIVERY</h3>
+<p>We invite you to discover and experience the power of our services.</p>
+
+</div>
+</section>
+
+<div class="b-b"></div>
+
+<!--about us content-->
+
+<section class="about-us" data-aos="zoom-in-up">
+<h2 id="about">ABOUT US</h2>
+<div style="text-align:justify">
+<p>Over the years, we have found that a team approach can be an effective method to help clients who have a wide variety of needs as they maneuver through a complex financial-services world.</p>
+
+<p>We invite you to discover and experience the power of our services. We believe it has far-reaching benefits for our clients to get opinions from several sources with diverse backgrounds, education, and experience.</p>
+</div>
+
+<div>
+      <center style="margin-top: 20px;"><img src="https://sksdev.site/img/3.png" alt="Sumit Pingale" style="width:100px; border-radius:50px;">
+      <h3>Mr. XYZ</h3>
+      <p style="margin-top:-15px">Owner</p>
+      <a style="color:#f44336; margin-right:15px; font-size: 25px;" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+      <a style="color:#f44336; font-size: 25px;" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a><br>
+      <a href="tel:+91 98811 55773" style="margin-top:7px" class="hero-btn red-btn"><i class="fa fa-phone"></i> Contact Now</a></center>
+</div>   
+    
+</section>
+
+<div class="b-b"></div>       
+
+<!--testimonials-->
+
+<section class="testimonials">
+  <h2>What Our Client Says</h2>
+
+  <div class="row">
+    <div class="testimonial-col" data-aos="zoom-in-up">
+      <img src="img/3.png" alt="">
+      <div>
+      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur.</p>
+	<h3>Nil Jain</h3>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+    </div>
+   </div>
+   <div class="testimonial-col testimonial-col-x" data-aos="zoom-in-up">
+     <img src="img/3.png" alt="">
+     <div>
+     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur.</p>
+     <h3>Sanket Yeole</h3>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star-half-o"></i>
+   </div>
+  </div>
+  </div>
+
+</section>
+  
+<div class="b-b"></div>
+
+<section class="ab about-us" style="text-align:center" data-aos="zoom-in-up">
+   <h2 id="contact">CONTACT US</h2>
+    <br><em>We'd love your feedback!</em><br><br>
+      <h3>WALK IN</h3>
+<a href="https://www.google.com/maps/place/Sanghavi+Colony,+Pachora,+Maharashtra+424201/@20.6644288,75.3392655,15z/data=!4m2!3m1!1s0x3bd943139b80990f:0x5e780afd897ab9de"><i class="fa fa-map-marker" style="width:30px"></i> Sanghavi Colony,<br>
+Pachora, Maharashtra 424201</a>
+      <h3 style="margin:20px 0px;">OR</h3>
+      <h3>CALL US</h3>
+       <a href="tel:+91 88888 89112"><i class="fa fa-phone" style="width:30px"></i>+91 88888 89112</a>
+</section>
+
+<div class="b-b"></div>
+
+<!--Footer-->
+
+<section class="footer" data-aos="zoom-in-up">
+  <h4>FOLLOW US ON</h4>
+  <div class="icons" style="margin-top: 15px;">
+    <a href="https://www.facebook.com/pages/category/Cafe/Birthday-Bites-446852752797221/"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/birthdaybites/"><i class="fa fa-instagram"></i></a>
+  </div>
+  <p>Made with <i class="fa fa-heart"></i> by KSTEC</p>
+</section>
+
+
+<!--javascipt for toggle menu-->
+<script>
+
+var navLinks = document.getElementById("navLinks")
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "100%";
+}
+</script>
+
+<script>AOS.init({
+  duration: 1200,
+})</script>
+
+  </body>
+</html>
