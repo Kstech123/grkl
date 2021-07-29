@@ -275,6 +275,11 @@ h3{
   padding-top: 80px;
   padding-bottom: 50px;
 }
+
+.testimonials h2{
+  margin-bottom: 20px;
+}
+
 .testimonial-col{
   flex-basis: 44%;
   border-radius: 10px;
