@@ -393,8 +393,14 @@ h3{
 }
 
 .as{
-  margin-bottom: 40px;
   width: 90%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+
+.as h2{
+  margin-bottom: 30px;
 }
 
 .about-col{
