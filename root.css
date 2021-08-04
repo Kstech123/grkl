@@ -113,14 +113,9 @@ nav .fa{
     font-size: 22px;
     cursor: pointer;
   }
-  .nav-links ul{
-    padding: 30px;
-  }
-  .nav-links ul li{
-    padding: 20px 0;
-  }
   .nav-links ul li a{
     font-size: 23px;
+    margin-top: 25%;
   }
   .nav-links ul li a:hover{
     color: #f44336;
