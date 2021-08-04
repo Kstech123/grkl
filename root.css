@@ -11,7 +11,7 @@ a {
 .header{
    min-height: 100vh;
    width: 100%;
-   background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(img/nbg.jpg);
+   background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(img/qbg.jpg);
    background-position: center;
    background-size: cover;
    position: relative;
