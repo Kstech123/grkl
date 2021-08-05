@@ -577,3 +577,11 @@ h3{
 	text-align: center;
 	margin: 0 auto;
 }
+.navi{position:relative}
+.qee{position:absolute;top:20%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%)}
+.about-col p{
+  padding: 10px 0 20px;
+}
