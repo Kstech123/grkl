@@ -592,5 +592,6 @@ transform:translate(-50%,-50%);
 
 @media(max-width: 700px){
   .mno {
-    display: block;
+    display: inline-block;
+    float: left;
   }
