@@ -586,6 +586,7 @@ transform:translate(-50%,-50%);
     display: inline-block;
     float: left;
   }
+}
 
 .iop-col{
   flex-basis: 31%;
