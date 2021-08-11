@@ -589,4 +589,12 @@ transform:translate(-50%,-50%);
 
 .iop-col{
   flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  white-space: wrap;
 }
