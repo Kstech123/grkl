@@ -356,6 +356,13 @@ h3{
   color: #f44336
 }
 
+.icons .fab{
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
 /*--about us page--*/
 
 .sub-header{
