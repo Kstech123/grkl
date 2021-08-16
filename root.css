@@ -607,9 +607,9 @@ transform:translate(-50%,-50%);
 
 .io-col{
   flex-basis: 31%;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
-  background: rgba(0,0,0,0.5);
+  background: #fff3f3;
   padding: 25px;
   margin: 10px;
 }
