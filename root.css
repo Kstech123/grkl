@@ -585,11 +585,12 @@ transform:translate(-50%,-50%);
 .wcu{
   width: 90%;
   margin: auto;
-  padding: 50px 0px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .wcu h2{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .io-col{
