@@ -273,7 +273,7 @@ h3{
   text-align: left;
   background: #fff3f3;
   padding: 25px;
-  cursor: pointer;
+  transition: 0.5s;
   display: flex;
 }
 .testimonial-col img{
@@ -292,6 +292,11 @@ h3{
 .testimonial-col .fa{
   color: #f44336;
 }
+
+.testimonial-col:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 @media(max-width: 700px) {
   .testimonial-col img{
     margin-left: 0px;
