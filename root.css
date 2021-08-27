@@ -273,8 +273,8 @@ h3{
   text-align: left;
   background: #fff3f3;
   padding: 25px;
-  transition: 0.5s;
   display: flex;
+  transition: 0.5s;
 }
 .testimonial-col img{
   height: 40px;
