@@ -8,14 +8,6 @@ a {
   text-decoration: none;
 }
 
-.header{
-   min-height: 100vh;
-   width: 100%;
-   background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(img/qbg.jpg);
-   background-position: center;
-   background-size: cover;
-   position: relative;
-}
 nav{
    display: flex;
    padding: 2% 6%;
@@ -38,23 +30,6 @@ nav{
   font-size: 19px;
 }
 .nav-links ul li:hover{
-  color: #fff;
-}
-.text-box{
-  width: 90%;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-.text-box h1{
-  font-size: 50px;
-}
-.text-box p{
-  margin: 10px 0 40px;
-  font-size: 20px;
   color: #fff;
 }
 .hero-btn{
@@ -118,22 +93,8 @@ nav .fa{
 
 /*-- course --*/
 
-.course{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
 h1,h2,h3,h4,h5,h6{
 text-align: center;
-}
-
-.ub{
-text-decoration: underline;
-text-underline-offset: 10px;
-text-decoration-thickness: 2px;
-text-decoration-color: #000;
 }
 
 h1{
@@ -154,103 +115,17 @@ p{
   display: flex;
   justify-content: space-between;
 }
-.course-col{
-  flex-basis: 31%;
-  background: #fff3f3;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
+
 h3{
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
-.course-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
+
 @media(max-width: 700px){
   .row{
     flex-direction: column;
   }
-}
-
-/*--campus*/
-
-.campus{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
-}
-.campus-col{
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-.campus-col img{
-  width: 100%;
-  display: block;
-}
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover{
-  background: rgba(226,0,0,0.7);
-}
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-.layer:hover h3{
-  bottom: 49%;
-  opacity: 1;
-}
-
-/*--facilities--*/
-
-.facilities{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
-}
-.facilities-col{
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: center;
-}
-.facilities-col img{
-  width: 100%;
-  border-radius: 10px;
-}
-
-.facilities-col p{
-  padding: 0%;
-}
-.facilities-col h3{
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: center;
 }
 
 /*--testimonials--*/
@@ -310,33 +185,6 @@ h3{
   }
 }
   
-/*--Call to Action--*/
-
-.cta{
-  margin: 50px auto 0px auto;
-  width: 40%;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/banner21.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  text-align: center;
-  padding: 50px 0px;
-}
-
-.cta h3{
-  color: #fff;
-  padding: 0;
-}
-
-@media (max-width: 700px) {
-  .cta{
-  width: 80%;
-}
-  .cta h3{
-    font-size: 24px;
-  }
-}
-
 /*--Footer--*/
 
 .footer{
@@ -416,48 +264,6 @@ h3{
   padding: 15px 0 25px;
 }
 
-/*--blog page*/
-
-.blog-content{
-  width: 80%;
-  margin: auto;
-  padding: 60px 0;
-}
-.blog-left{
-  flex-basis: 65%;
-}
-.blog-left img{
-  width: 100%;
-}
-.blog-left h2{
-  color: #222;
-  font-weight: 600;
-  margin: 30px 0;
-}
-.blog-left p{
-  color: #999;
-  padding: 0;
-}
-
-
-.blog-right{
-  flex-basis: 32%;
-}
-.blog-right h3{
-  background: #f44336;
-  color: #fff;
-  padding: 7px 0;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.blog-right div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #555;
-  padding: 8px;
-  box-sizing: border-box;
-}
 @media (max-width:700px){
     .sub-header h1{
       font-size: 29px;
@@ -471,89 +277,9 @@ h3{
   padding-bottom: 20px;
 }
 
-.cam{
-  padding: 10px 20px 0px 20px;
-}
-
-.dc{
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  -ms-transform:translate(-50%,-50%);
-}
-
-.dc-con{position:relative}
-
-.contain{
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.contain-col{
-    background: #f9f9f9 none repeat scroll 0 0;
-    padding: 20px;
-    border-radius: 15px;
-    margin: auto;
-}
-
-.contain-col h3{
-    color: #000;
-    text-align: center;
-}
-
-.contain-col img{
-    width: 40%; 
-    border-radius: 10px;
-    text-align: center;
-}
-
-.contain-col p{
-    text-align: center;
-    font-size: 15px;
-}
-
-@media (max-width:500px){
-    .contain-col img{
-      width: 100%;
-    }
-}
-
-@media (max-width:1000px){
-    .contain-col img{
-      width: 60%;
-    }
-  .contain-col p{
-    text-align: left;
-}
-}
-
-.ab{
-  color: #000;
-  }
-
 .ab a{
   color: #000;
   }
-
-@media (min-width: 701px){
-.hide-l{
-   display: none;
- }
-}
-
-@media (max-width: 700px){
-.hide-s{
-   display: none;
- }
-}
-
-@media (max-width: 700px){
-.ssimg{
-   margin-top: -55px;
- }
-}
 
 .bt-icon {
 	width: 100px;
@@ -567,6 +293,7 @@ h3{
 	text-align: center;
 	margin: 0 auto;
 }
+
 .navi{position:relative}
 .qee{position:absolute;top:20%;
 left:50%;
@@ -618,4 +345,74 @@ transform:translate(-50%,-50%);
 
 .io-col:hover{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.na{position:relative}
+.qe{position:absolute;
+left:50%;
+transform:translate(-50%,0%);
+-ms-transform:translate(-50%,0%)}
+
+.iog-col{
+  flex-basis: 31%;
+  border-radius: 15px;
+  text-align: center;
+  width: 50%;
+}
+
+@media(max-width: 700px){
+  .iog-col{
+    padding-bottom: 25px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+.iog-col h3{
+  margin-top: 13px;
+}
+
+iframe{
+  border-radius: 20px;
+}
+
+@media(max-width: 700px){
+  iframe{
+    margin-top: -50px;
+    margin-bottom: -30px;
+  }
+
+  .fgy{
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+  .iog-col{
+    padding-bottom: 25px;
+    width: 400px;
+    margin: auto;
+  }
+}
+
+.wci{
+  width: 90%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.wci h2{
+  margin-bottom: 40px;
+}
+
+@media (min-width: 701px){
+  .sub-header{
+  height: 100vh;
+}
+
+.sub-header h1{
+  margin-top: 35vh;
+}
 }
