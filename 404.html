@@ -1,68 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Page Not Found!</title>
-    <link rel="icon" type="image/png" href="icon.jpg">
-    <link rel="stylesheet" href="root.css">
+    <link rel="icon" type="image/png" href="img/gurukul-logo.png">
+    <link rel="stylesheet" href="https://www.gurukulpachora.in/root.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
 
-   <section class="header">
+   <section class="sub-header navi">
      <nav>
-       <a href="https://todaytechfact.club/"><img src="img/our-logo.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
+       <a href="#"><img src="img/gurukul-logo.png" alt="our-logo" width="60px" height="60px" title="Home" style="border-radius: 50%;"></a>
        <div class="nav-links" id="navLinks">
-         <i class="fa fa-times" onclick="hideMenu()"></i>
+        <i class="fa fa-times" style="text-align: right; font-size: 30px; padding: 3% 6%; Cursor: text; Text-Decoration: None;" onclick="hideMenu()"></i>
          <ul>
-           <li><a href="https://www.todaytechfact.club/">HOME</a></li>
-           <li><a href="https://www.todaytechfact.club/#services">SERVICES</a></li>
-           <li><a href="/about.html">ABOUT</a></li>
-           <li><a href="/contact.html">CONTACT</a></li>
-           <li><a href="/career.html">CAREER</a></li>
+           <li><a href="#about" class="hero-btn" onclick="hideMenu()">About</a></li>
+           <li><a href="#contact" class="hero-btn" onclick="hideMenu()">Contact</a></li>
+           <li><a href="#notice" class="hero-btn" onclick="hideMenu()">Notice</a></li>
          </ul>
        </div>
        <i class="fa fa-bars" onclick="showMenu()"></i>
      </nav>
-
-<div class="text-box">
-  <h1>Oops!</h1>
-  <i class="fa fa-frown-o" style="font-size:200px;color:#f2f2f2;"></i>
-  <p>Sorry, but the page you are looking for doesn't exist.</p>
-  <a href="https://todaytechfact.club/" class="hero-btn">Go To Home</a>
-
-</div>
-
+     <h1 class="qee">GURUKUL<br>INTERNATIONAL<br>SCHOOL</h1>
    </section>
 
-<!--Footer-->
+<center style="margin: 50px 0px 20px 0px; color: #000;">
+  <h1>Oops!</h1>
+  <i class="fa fa-frown-o" style="font-size:100px; margin:15px 0px;"></i>
+  <p style="margin-bottom:20px;">Sorry, but the page you are looking for doesn't exist.</p>
+  <a href="https://www.gurukulpachora.in/" style="background: #f44336; color: #fff; padding: 12px 20px; border-radius: 50px;">Go To Home</a>
+</center>
 
-<section class="footer">
-  <h4>About Us</h4>
-  <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.</p>
-  <div class="icons">
-    <i class="fa fa-facebook"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-pinterest"></i>
-  </div>
-  <p>Made with <i class="fa fa-heart"></i> by KSTECH</p>
-</section>
+   <!--Footer-->
 
+   <section class="footer" data-aos="zoom-in-up">
+     <h4>FOLLOW US ON</h4>
+     <div class="icons" style="margin-top: 15px;">
+       <a href="https://facebook.com/GurukulSchoolPachora/"><i class="fa fa-facebook"></i></a>
+       <a href="https://www.instagram.com/_gurukul_school_pachora_/"><i class="fa fa-instagram"></i></a>
+       <a href="https://youtube.com/channel/UCLi7hr5FLt0rf7p-bttm64g"><i class="fab fa-youtube"></i></a>
+     </div>
+     <p>Copyright © 2021 GURUKUL. All Rights Reserved<br>
+     Made with <i class="fa fa-heart"></i> by KSTECH</p>
+   </section>
 
-<!--javascipt for toggle menu-->
-<script>
+   <!--javascipt for toggle menu-->
+   <script>
 
-var navLinks = document.getElementById("navLinks")
-function showMenu(){
-  navLinks.style.right = "0";
-}
-function hideMenu(){
-  navLinks.style.right = "-200px";
-}
-</script>
-  </body>
-</html>
+   var navLinks = document.getElementById("navLinks")
+   function showMenu(){
+     navLinks.style.right = "0";
+   }
+   function hideMenu(){
+     navLinks.style.right = "100%";
+   }
+   </script>
+
+     </body>
+   </html>
