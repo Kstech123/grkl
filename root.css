@@ -381,6 +381,7 @@ iframe{
   iframe{
     margin-top: -50px;
     margin-bottom: -30px;
+    height: 275px;	  
   }
 
   .fgy{
@@ -415,4 +416,13 @@ iframe{
 .sub-header h1{
   margin-top: 35vh;
 }
+	
+.fgy{
+    margin-bottom: -40px;
+  }
+
+  iframe{
+    height: 100%;
+    width: 100%;
+  }	
 }
