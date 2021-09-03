@@ -417,12 +417,13 @@ iframe{
   margin-top: 35vh;
 }
 	
-.fgy{
+.fgy h2{
     margin-bottom: -40px;
   }
 
   iframe{
     height: 100%;
     width: 100%;
+    max-width: 500px;  
   }	
 }
