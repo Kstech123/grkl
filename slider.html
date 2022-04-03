@@ -1,303 +1,762 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Gurukul International School | School in Pachora</title>
-    <meta name="description" content="Our School has a qualitative educational approach based on modern international norms."/>
-    <meta name="keywords" content="gurukul school, gurukul pachora, gurukul international school pachora, best schools in pachora">
-    <link rel="icon" type="image/png" href="img/gurukul-logo.png">
-    <link rel="stylesheet" href="root.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gurukul International School, Pachora</title>
+<meta name="description" content="Our School has a qualitative educational approach based on modern international norms."/>
+<meta name="keywords" content="gurukul school, gurukul pachora, gurukul international school pachora, best schools in pachora">
+<link rel="icon" type="image/png" href="img/bmagarf-logo1.png">
+<script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
         $("#exampleModal").modal('show');
     });
-</script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
-   
+</script>    
 <style>
-html {
-  scroll-behavior: smooth;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-@media (max-width: 700px){
-  .ah{
-    margin: -25px auto;
-    width: 80%;
-  }
-  .ay{
-    margin: 0px 0px -40px 0px;
-  }
-}
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-@media (min-width: 701px){
-  .ah{
-    margin: 0px auto;
-    width: 150px;
-  }
-  .ay{
-    margin: 0px 0px -70px 0px;
-  }
-}	
+    h2 {
+        margin: 20px 0px 40px;
+        text-align: center;
+    }
+
+    hr {
+        opacity: 0.1 !important;
+        width: 80% !important;
+        margin: 0px auto;
+    }
+
+    section {
+        margin: 45px 0px;
+    }
+
+    .roo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* sldr */
+
+    .hero{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(img/gbi.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+    }
+
+    h1{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    .log {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    .log img{
+        width: 90px; 
+        height: 70px;
+    }
+
+    .mainu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+        font-weight: 600;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .nav-links ul li:hover {
+        background: #ff4336;
+        border-radius: 25px;
+    }
+
+    .mainu .fa {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 30rem;
+    }
+
+    @media(max-width: 700px) {
+        .mainu {
+            top: 26px;
+            right: 25px;
+        }
+
+        .nav-links ul li {
+            display: block;
+        }
+
+        .nav-links {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.85);
+            height: 100vh;
+            width: 100%;
+            top: 0px;
+            right: 100%;
+            text-align: center;
+            z-index: 2;
+            transition: 0.5s;
+        }
+
+        .mainu .fa {
+            display: block;
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .fa-times {
+            float: right;
+            padding: 29px 29px 0px 0px;
+        }
+
+        .nav-links ul {
+            margin: 55% 25px 0px 0px;
+        }
+
+        .nav-links ul li a {
+            font-size: 23px;
+        }
+
+        .log {
+            left: 10px;
+            top: 10px;
+        }
+
+        .hero{
+            height: 50vh;
+        }
+
+         h1{
+            top:30%;
+            left:50%;
+            font-size: 2rem;
+        }
+
+        .log img {
+            width: 80px; 
+            height: 60px;
+        }
+    }
+
+    /* about start */
+    
+    .roop {
+        max-width: 1000px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .columnp {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0px 20px;
+        margin: 0px auto;
+    }
+
+    @media(max-width: 800px) {
+        .columnp {
+            flex: 100%;
+            max-width: 600px;
+            margin: 0px auto;
+            padding: 0px 0px;
+        }
+
+        .columnp p{
+            width: 90%;
+        }
+    }
+
+    /* about end */
+
+    /* wcu start */
+
+    .roo {
+        padding: 0 10px;
+    }
+
+    .wcu-col {
+        border-radius: 25px;
+        text-align: center;
+        background: #fff5f5;
+        padding: 42px 25px 25px 25px;
+        transition: 0.5s;
+    }
+
+    .wcu-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        background: #ff4336;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .wcu-col:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .wcu-col p {
+        margin-top: -10px;
+    }
+
+
+    @media(max-width: 500px) {
+        .colwcu {
+            flex: 100%;
+            max-width: 95%;
+            margin: 0px auto;
+        }
+
+        .wcu-col {
+            max-width: 350px;
+            margin: 10px auto;
+        }
+
+        .colwcu h4 {
+            margin: 15px 0px;
+        }
+    }
+
+    @media (min-width: 501px) and (max-width: 800px) {
+        .colwcu {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 15px;
+        }
+
+        .wcucl3 {
+            margin: 25px auto 0px;
+        }
+
+        .colwcu h4 {
+            margin: 0px 0px 15px;
+        }
+
+        .colwcu p {
+            line-height: 21px;
+        }
+    }
+
+    @media(min-width: 801px) {
+        .colwcu {
+            flex: 33.33%;
+            max-width: 375px;
+            padding: 0px 10px;
+            margin: 0px auto;
+        }
+
+        .colwcu h4 {
+            margin: 0px 0px 15px;
+        }
+
+        .colwcu p {
+            line-height: 21px;
+        }
+    }
+
+    @media(min-width: 1201px) {
+        .colwcu {
+            padding: 0px 0px;
+        }
+
+        .colwcu h4 {
+            margin-top: 13px;
+        }
+    }
+
+    /* wcu end */
+
+    /* start gallery */
+
+    .roog {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .columng {
+        flex: 33.33%;
+        max-width: 33.33%;
+        text-align: center;
+    }
+
+    .columng img {
+        margin-top: 35px;
+        vertical-align: middle;
+        border-radius: 25px;
+        transition: 0.5s;
+        width: 90%;
+    }
+
+    .columng img:hover {
+        box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .columng h5{
+            margin: 20px auto 0px;
+            text-align: center;
+        }
+
+    @media (min-width: 901px){
+        .roog{
+            max-width: 1300px;
+            margin: 0px auto;
+        }
+
+        .gm6{
+            display: none;
+        }
+    }
+
+    @media (min-width: 551px) and (max-width: 900px) {
+        .columng {
+            flex: 50%;
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .columng img{
+            width: 95%;
+        }
+
+        .gls6{
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .columng {
+            flex: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        .columng img{
+            width: 90%;
+        }
+
+        .columng h5{
+            margin: 10px auto 0px;
+            text-align: center;
+        }
+
+        .gm6{
+            display: none;
+        }
+    }
+
+    /* end gallery */
+
+    /* Review Start */
+
+    .columnt {
+        border-radius: 25px;
+        text-align: left;
+        background: #ffeded;
+        padding: 25px;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .columnt:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .columnt img {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 30px;
+        border-radius: 50%;
+    }
+
+    .columnt p {
+        padding: 0;
+    }
+
+    .columnt h3 {
+        margin-top: l5px;
+        text-align: left;
+    }
+
+    .fa-star {
+        color: #f84d40;
+    }
+
+    @media(max-width: 650px) {
+        .columnt {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        .rowt {
+            padding: 0 15px;
+            display: block;
+        }
+
+    }
+
+    @media(min-width: 651px) {
+        .columnt {
+            flex: 100%;
+            max-width: 300px;
+            padding: 0px;
+            margin: 0px auto;
+        }
+
+        .rowt {
+            padding: 0 15px;
+            max-width: 700px;
+            margin: 0px auto;
+        }
+
+    }
+
+    @media(max-width: 700px) {
+        .columnt img {
+            margin-left: 0px;
+            margin-right: 15px;
+        }
+    }
+
+    /* contact start */
+
+    .contact a {
+        text-decoration: none;
+        color: #000;
+        line-height: 1.60;
+    }
+
+    /* contact end */
+
+    /* footer start */
+
+    .icons .fa {
+        color: #f84d40;
+        margin: 12px 6px;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    .fa-heart {
+        color: #f84d40;
+    }
+
+    .footer p {
+        line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+        iframe {
+            width: 90%;
+            height: 325px;
+            border-radius: 25px;
+            max-width: 350px;
+        }
+    }
+
+    @media (min-width: 601px) {
+        iframe {
+            width: 450px;
+            height: 300px;
+            border-radius: 25px;
+        }
+    }
 </style>
 
-  </head>
-  <body>
+<body>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Hurry Up!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hurry Up!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Admissions has been started for 2022-23</p>
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjQsen3pXkKXnaYTlFBMuufNwuD_zg_ioGxPM_IVAzb-ynyaFMQImpJ5QWxmQVkY5xCM1WMgnS1SKDfOC-SjLTESpo6xhOHT69JBxSbsI4OifxQmzaISCAnpsDMsBh7RpWtz2wk7E9EV-xhs_99-JOzrFPpRGQK1j097JyZxUFYUazJRkVJ-YRzLV8/s1600/gkrl-hero.jpg" width="100%">            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                <a href="https://forms.gle/tCWu4UidxybMyKAJ9"><button type="button" class="btn btn-primary">Apply Now</button></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Admissions has been started for 2022-23</p>
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjQsen3pXkKXnaYTlFBMuufNwuD_zg_ioGxPM_IVAzb-ynyaFMQImpJ5QWxmQVkY5xCM1WMgnS1SKDfOC-SjLTESpo6xhOHT69JBxSbsI4OifxQmzaISCAnpsDMsBh7RpWtz2wk7E9EV-xhs_99-JOzrFPpRGQK1j097JyZxUFYUazJRkVJ-YRzLV8/s1600/gkrl-hero.jpg" width="100%">            
-      </div>
+
+      <!-- Hero -->
+
+    <div class="hero">
+            <div class="log"><a href="#"><img src="img/gurukul-logo.png" alt="Gurukul International School, Pachora logo" title="Home"></a></div>
+            <div class="mainu">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" style="font-size: 30px;" onclick="hideMenu();"></i>
+                    <ul style="text-align: center;">
+                        <li><a href="#about" onclick="hideMenu()">About</a></li>
+                        <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+                        <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu();"></i>
+            </div>
+        </div>
+        <div style="text-align: center;">
+        <h1 id="h1">Gurukul<br>International<br>School</h1>
     </div>
-  </div>
-</div>
+    </div> 
 
-   <section class="sub-header navi">
-     <nav>
-       <a href="#"><img src="img/gurukul-logo.png" alt="our-logo" width="60px" height="60px" title="Home" style="border-radius: 50%;"></a>
-       <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" style="text-align: right; font-size: 30px; padding: 3% 6%; Cursor: text; Text-Decoration: None;" onclick="hideMenu()"></i>
-         <ul>
-           <li><a href="#about" class="hero-btn" onclick="hideMenu()">About</a></li>
-           <li><a href="#contact" class="hero-btn" onclick="hideMenu()">Contact</a></li>
-           <li><a href="#notice" class="hero-btn" onclick="hideMenu()">Notice</a></li>
-         </ul>
-       </div>
-       <i class="fa fa-bars" onclick="showMenu()"></i>
-     </nav>
-     <h1 class="qee">GURUKUL<br>INTERNATIONAL<br>SCHOOL</h1>
-   </section>
-	  
-<section class="about-us fgy" style="width: 90%; max-width: 1500px;"  data-aos="zoom-in-up" id="about">
-   <marquee direction = "left" style="width: 100%; margin: 20px auto 0px auto;">
-    <div style="color:#f44336; font-weight: 600;">Free NEET Revision Tests & Formula Book is available.</div>
-    </marquee>
+    <!-- About -->
 
-<div>
-<div class="row ay">
-  <div class="about-col ah">
-    <div style="color: #fff; background: #f44336; border-radius: 50px; text-align: center; padding: 15px 0px; font-weight: 500;"><a href="img/1.pdf" download style="color: #fff;">Download PDF 1</a></div>
-  </div>
-    <div class="about-col ah">
-      <div style="color: #fff; background: #f44336; border-radius: 50px; text-align: center; padding: 15px 0px; font-weight: 500;"><a href="img/2.pdf" download style="color: #fff;">Download PDF 2</a></div>
-      </div>
-    <div class="about-col ah">
-      <div style="color: #fff; background: #f44336; border-radius: 50px; text-align: center; padding: 15px 0px; font-weight: 500;"><a href="img/3.pdf" download style="color: #fff;">Download PDF 3</a></div>
-    </div>
-    </div>
-    </div>
+    <section id="about">
+        <h2 style="margin-bottom: 0px;">ABOUT <div
+                style="background-color: #ff4336; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
 
-  </section>	  
-
-<div class="b-b"></div>
-
-<section class="about-us fgy" style="width: 90%; max-width: 1500px;"  data-aos="zoom-in-up">
-
-<h2 id="about"><span style="color:#f44336;">ABOUT</span> US</h2>
-
-<center>	
-	
-  <div class="row">
-  <div class="about-col fgy">
-      <div style="text-align:justify">
-        <p style="text-indent: 25px;">Welcome to Gurukul International School & College, pachora. we were established in june 2008. We conduct CBSE as well as the State Board Syllabus & offers schooling from nursury to class 12th in commerce & science.</p>
-        <p style="text-indent: 25px;">As today's world is competitive, it is our responsibility to prepare students for it
+        <div class="roop">
+            <div class="columnp">
+    
+    <p style="text-align: justify; margin: 12px auto; text-indent: 25px;">Welcome to Gurukul International School
+        & College, pachora. we were established in june 2008. We conduct CBSE as well as the State Board
+        Syllabus & offers schooling from nursury to class 12th in commerce & science.</p>
+        <p style="text-align: justify; margin: 12px auto; text-indent: 25px;">As today's world is competitive, it is our responsibility to prepare students for it
         we are preparing students for many competitive exams like UPSC/MPSC, JEE, NEET from 8th standard onwards.</p>
-        <p style="text-indent: 25px;">Our School has a qualitative educational approach based on modern international norms. The School aims to improve academic results as well as character, through a balanced curriculum.</p>
-</div>
+        <p style="text-align: justify; margin: 12px auto; text-indent: 25px;">Our School has a qualitative educational approach based on modern international norms. The School aims to improve academic results as well as character, through a balanced curriculum.</p>
+
     </div>
-    <div class="about-col">
-    <iframe src="https://www.youtube.com/embed/wL8P3IWtGlo"></iframe>
-  </div>
-  </div>
 
-  <div style="margin-top: 15px; text-align: center;"><img src="img/prem-sir.jpg" alt="Prem Sir" style="width:100px; border-radius:50px;">
-       <h3>Mr. Prem Shamnani</h3>
-       <p style="margin-top:-15px">Founder & Principal</p>
-       <a style="color:#f44336; margin-right:15px; font-size: 25px;" href="https://facebook.com/prem.shamnani.3" title="Facebook"><i class="fa fa-facebook"></i></a>
-       <a style="color:#f44336; font-size: 25px;" href="https://www.instagram.com/prem.shamnani.3/" title="Instagram"><i class="fa fa-instagram"></i></a>
-  </div>
-
-</center>
-
-</section>
-
-<div class="b-b"></div>
-
-<section class="wcu">
-<h2><span style="color:#f44336;">WHY</span> CHOOSE US</h2>
-
-<div class="row">
-
-  <div class="io-col">
-   <div class="bt-icon">
-    <img src="img/kbe.png" height="52px" width="52px" alt="" style="padding-top: 25px;">
-   </div>
-    <h3>KNOWLEDGE IS POWER</h3>
-    <p>Ta on a clip to paste it in the text box.</p>
-  </div>
-
- <div class="io-col">
-  <div class="bt-icon">
-   <img src="img/qt.png" height="56px" width="52px" alt="" style="padding-top: 25px;">
-  </div>
-   <h3>QUALIFIED TEACHERS</h3>
-   <p>Tap on a clip to paste it in the text box.</p>
- </div>
-
- <div class="io-col">
-  <div class="bt-icon">
-   <img src="img/sl.png" height="52px" width="52px" alt="" style="padding-top: 25px;">
-  </div>
-   <h3>SMART LIBRARY</h3>
-   <p>Tap on a clip to paste it in the text box.</p>
- </div>
-
-</div>
-</section>
-
-<div class="b-b"></div>
-
-<section class="wci">
-<h2><span style="color:#f44336;">OUR</span> GALLERY</h2>
-
-<div class="row">
-
-  <div class="iog-col">
-    <img src="img/clsr.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Classroom</h3>
-  </div>
-
-  <div class="iog-col">
-    <img src="img/gbi.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Robotics Lab</h3>
-  </div>
-
-  <div class="iog-col">
-    <img src="img/off.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Our Facilities</h3>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="iog-col">
-    <img src="img/swim.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Swimming</h3>
-  </div>
-
-  <div class="iog-col">
-    <img src="img/hr.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Horse Riding</h3>
-  </div>
-
-  <div class="iog-col">
-    <img src="img/gbi.jpg" width="100%" alt="" style="border-radius: 10px;">
-    <h3>Rifle Shooting</h3>
-  </div>
-
-</div>
-
-</section>
-
-<div class="b-b"></div>
-
-<!--testimonials-->
-
-<section class="testimonials">
-  <h2><span style="color:#f44336;">OUR</span> STUDENTS</h2>
-
-  <div class="row">
-    <div class="testimonial-col" data-aos="zoom-in-up">
-      <img src="img/3.png" alt="">
-      <div>
-      <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur.</p>
-	<h3>Nil Jain</h3>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
+            <div class="columnp">
+        <div style="text-align: center;">
+        <iframe src="https://www.youtube.com/embed/wL8P3IWtGlo" style="margin-top: 25px;" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>    
     </div>
-   </div>
-   <div class="testimonial-col testimonial-col-x" data-aos="zoom-in-up">
-     <img src="img/3.png" alt="">
-     <div>
-     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur.</p>
-     <h3>Sanket Wani</h3>
-     <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i>
-     <i class="fa fa-star-half-o"></i>
-   </div>
-  </div>
-  </div>
+</div>
+</div>
 
-</section>
 
-<div class="b-b"></div>
+    <!-- Wcu -->
 
-<section class="about-us ab" style="text-align:center" data-aos="zoom-in-up">
-   <h2 id="contact"><span style="color:#f44336;">CONTACT</span> US</h2>
-    <br><em>We'd love your feedback!</em><br><br>
-      <h3>WALK IN</h3>
-<a href="https://www.google.com/maps/dir//Gurukul+English+Medium+School,+Opposite+of+Preeti+petrol+pump,+Jamner+Rd,+Pachora,+Maharashtra+424201/@20.6655268,75.3718144,16z/data=!4m6!4m5!1m0!1m2!1m1!1s0x3bd9686e1f4fec47:0x35e7350a144154c6!3e0"><i class="fa fa-map-marker" style="width:30px"></i> Gurukul International School,<br>
-Near Sindhi Colony, Pachora, Maharashtra 424201</a>
-      <h3 style="margin:20px 0px; color:#f44336;">OR</h3>
-      <h3>CALL US</h3>
-       <a href="tel:+91 89836 18825"><i class="fa fa-phone-alt" style="width:30px"></i>+91 89836 18825</a>
-</section>
+    <section>
 
-<div class="b-b"></div>
+        <h2>WE <div
+                style="background-color: #ff4336; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
 
-<center><div style="display: inline-block; height: 570px; width: 300px; text-align: center; background: #f44336; color:#fff; border-radius: 15px; margin: 70px 0px 45px 0px;">
-      <div style="margin-top: 20px;"><div style="height: 2px; width: 80px; background: #fff; margin: 0px 0px 0px 0px;"></div><h2 style="margin-top: -19px;" id="notice">NOTICE</h2><div style="height: 2px; width: 80px; background: #fff; float: right; margin-top: -20px"></div></div><marquee direction = "up" height="545px" scrollamount="2" scrolldelay="5" onmouseover="this.stop();"
-           onmouseout="this.start();" style="text-align: center; padding: 0px 10px;">
-       <div style="border-bottom: 2px dashed white; padding: 10px 0px;"><a href="https://forms.gle/tCWu4UidxybMyKAJ9" style="color:#fff;">Online Admission Form for Academic Year 2021-22</a></div>
-       <div style="border-bottom: 2px dashed white; padding: 10px 0px;"><a href="https://chat.whatsapp.com/I2YSMozO5duI03DcCBdmKp" style="color:#fff;">Click here to join our Watsapp Group</a></div>
-       <div style="border-bottom: 2px dashed white; padding: 10px 0px;">Tap on a clip to past it in the text box an other.</div>
-       </marquee></div></center>
+        <div class="roo">
 
-<div class="b-b"></div>
+            <div class="colwcu">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/kbe.png"
+                            alt="gurukul international school pachora highlight 1" width="55px" height="56px"
+                            style="margin-top: 27px;">
+                    </div>
+                    <h4>KNOWLEDGE IS POWER</h4>
+                    <p>Tap on a clip to paste it in the text box.</p>
+                </div>
+            </div>
 
-<!--Footer-->
+            <div class="colwcu">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/qt.png" alt="gurukul international school pachora highlight 2"
+                            width="60px" height="70px" style="margin-top: 20px;">
+                    </div>
+                    <h4>QUALIFIED TEACHERS</h4>
+                    <p>Tap on a clip to paste it in the text box.</p>
+                </div>
+            </div>
 
-<section class="footer" data-aos="zoom-in-up">
-  <h4>FOLLOW US ON</h4>
-  <div class="icons" style="margin-top: 15px;">
-    <a href="https://facebook.com/GurukulSchoolPachora/"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.instagram.com/_gurukul_school_pachora_/"><i class="fa fa-instagram"></i></a>
-    <a href="https://youtube.com/channel/UCLi7hr5FLt0rf7p-bttm64g"><i class="fab fa-youtube"></i></a>
-  </div>
-  <p>Copyright © 2021 GURUKUL. All Rights Reserved<br>
-  Made with <i class="fa fa-heart"></i> by KSTECH</p>
-</section>
+            <div class="colwcu wcucl3">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/sl.png" alt="gurukul international school pachora highlight 3"
+                            width="55px" height="50px" style="margin-top: 27px;">
+                    </div>
+                    <h4>SMART LIBRARY</h4>
+                    <p>Tap on a clip to paste it in the text box.</p>
+                </div>
+            </div>
 
-<!--javascipt for toggle menu-->
-<script>
+        </div>
+    </section>
 
-var navLinks = document.getElementById("navLinks")
-function showMenu(){
-  navLinks.style.right = "0";
-}
-function hideMenu(){
-  navLinks.style.right = "100%";
-}
-</script>
+    <hr id="gallery">
 
-  </body>
+    <!-- gallery -->
+
+    <section>
+        <h2 style="margin-bottom: -20px;">GALLERY <div
+                style="background-color: #f84d40; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+        <div class="roog">
+            <div class="columng">
+                <img src="img/clsr.jpg" alt="gurukul international school pachora gallery image 1">
+                <img src="img/gbi.jpg" alt="gurukul international school pachora gallery image 2">
+            </div>
+
+            <div class="columng">
+                <img src="img/off.jpg" alt="gurukul international school pachora gallery image 4">
+                <img src="img/swim.jpg" alt="gurukul international school pachora gallery image 5">
+            </div>
+
+            <div class="columng">
+                <img src="img/hr.jpg" alt="gurukul international school pachora gallery image 4">
+                <img src="img/gbi.jpg" alt="gurukul international school pachora gallery image 5" class="gls6">
+            </div>
+
+            <div class="columng gm6">
+                <img src="img/gbi.jpg" alt="gurukul international school pachora gallery image 5">
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- reviews -->
+
+    <section class="testimonials">
+        <h2>REVIEWS <div
+                style="background-color: #f84d40; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+
+        <div class="rowt">
+            <div class="columnt">
+                <img src="img/3.png" alt="">
+                <div>
+                    <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit
+                        atque consequatur.</p>
+                    <h3>Nil Jain</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="columnt">
+                <img src="img/3.png" alt="">
+                <div>
+                    <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit
+                        atque consequatur.</p>
+                    <h3>Sanket Patil</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr id="contact">
+
+    <!-- contact -->
+
+    <section class="contact" style="text-align:center">
+        <h2>CONTACT <div
+                style="background-color: #f84d40; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+        <em>We'd love your feedback!</em><br><br>
+        <h3>WALK IN</h3>
+        <a
+            href="https://www.google.com/maps/dir//Gurukul+English+Medium+School,+Opposite+of+Preeti+petrol+pump,+Jamner+Rd,+Pachora,+Maharashtra+424201/@20.6655268,75.3718144,16z/data=!4m6!4m5!1m0!1m2!1m1!1s0x3bd9686e1f4fec47:0x35e7350a144154c6!3e0"><i
+                class="fa fa-map-marker" style="width:30px"></i>Gurukul International School,<br>Near Sindhi
+            Colony,<br>Pachora-424201</a>
+        <h4 style="margin:20px 0px; color:#f84d40;">OR</h4>
+        <h3>CALL US</h3>
+        <a href="tel:+91 8983618825"><i class="fa fa-phone-alt" style="font-size: 19px"></i> +91 89836 18825</a><br>
+        <a href="mailto:dr.bmpfoundation888@gmail.com"><i class="fa fa-envelope" style="font-size: 19px"></i>
+            gurukulpachora@gmail.com</a>
+    </section>
+
+    <hr>
+
+    <!--Footer-->
+
+    <section class="footer" style="text-align: center; margin-bottom: -50px;">
+        <h4>FOLLOW US ON</h4>
+        <div class="icons" style="margin: -5px 0px;">
+            <a href="https://www.facebook.com/GurukulSchoolPachora/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_gurukul_school_pachora_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCLi7hr5FLt0rf7p-bttm64g"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>Copyright © 2022 Gurukul School Pachora. All Rights Reserved<br>
+            Made with <i class="fa fa-heart"></i> by KSTECH</p>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            document.getElementById("h1").style.display = "none";
+        }
+        function hideMenu() {
+            navLinks.style.right = "100%";
+            document.getElementById("h1").style.display = "block";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
