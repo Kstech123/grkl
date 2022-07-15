@@ -201,6 +201,10 @@ h1 {
         float: right;
         margin: 29px 29px 0px 0px;
     }
+    
+    p{
+        font-size: 1.02rem;
+    }
 }
 
 /* about */
@@ -397,7 +401,7 @@ iframe{
 
 @media (max-width: 650px) {
     .gallery .row{
-        margin-top: -10px;
+        margin-top: -15px;
     }
 
     .gallery-col {
