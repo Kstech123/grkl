@@ -103,6 +103,7 @@ h1 {
 }
 
 .nav-links ul a{
+    text-decoration: none;
     color: #fff;
 }
 
@@ -179,17 +180,12 @@ h1 {
         margin: 15rem 25px 0px 0px;
     }
 
-    .nav-links ul a {
-        font-size: 20px;
-        text-decoration: none;
-    }
-
     .nav-links ul li {
         display: block;
         width: 100%;
         margin: 0px auto;
         padding: 10px 0px;
-        font-size: 23px;
+        font-size: 24px;
     }
 
     .nav-links ul li:hover {
@@ -204,7 +200,7 @@ h1 {
     }
     
     p{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -258,11 +254,11 @@ iframe{
 }
 
 .prem-sir h3{
-    margin: 7px 0px -4px;
+    margin: 8px 0px -1.5px;
 }
 
 .prem-sir p{
-    margin-bottom: 0px;
+    margin-bottom: -2px;
 }
 
 .prem-sir a{
@@ -272,11 +268,11 @@ iframe{
 
 @media (max-width: 850px){
     #about{
-        margin: 35px auto;
+        margin: 40px auto;
     }
     
     #about h2{
-        margin-bottom: 5px;
+        margin-bottom: 3.5px;
     }
 
     .about-col{
@@ -289,7 +285,8 @@ iframe{
     iframe{
         width: 95%;
         max-width: 380px;
-        margin: 20px auto 5px;  
+        height: 300px;
+        margin: 15px auto 0px;  
     }
 }
 
@@ -406,7 +403,7 @@ iframe{
 
 @media (max-width: 650px) {
     .gallery .row{
-        margin-top: -22px;
+        margin-top: -25px;
     }
 
     .gallery-col {
@@ -421,7 +418,7 @@ iframe{
     }
 
     .gallery-col img {
-        margin: 15px 0px;
+        margin: 11px 0px;
     }
 }
 
@@ -488,6 +485,10 @@ iframe{
 }
 
 @media(max-width: 650px) {
+    .review h2{
+        margin-bottom: -15px;
+    }
+
     .review-col {
         flex: 100%;
         width: 90%;
@@ -542,11 +543,11 @@ iframe{
     }
 
     .or h4{
-        margin: 20px 0px;
+        margin: 15px 0px;
     }
 
     .contact a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .em {
@@ -558,7 +559,7 @@ iframe{
 
 .footer{
     text-align: center;
-    margin: -10px auto -5px;
+    margin: 32px auto -5px;
 }
 
 .sm-icons .fa{
