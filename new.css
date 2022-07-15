@@ -135,7 +135,7 @@ h1 {
     h1{
         top: 31%;
         left: 50%;
-        font-size: 1.95rem;
+        font-size: 1.98rem;
     }
 }
 
@@ -189,6 +189,7 @@ h1 {
         width: 100%;
         margin: 0px auto;
         padding: 10px 0px;
+        font-size: 23px;
     }
 
     .nav-links ul li:hover {
@@ -203,7 +204,7 @@ h1 {
     }
     
     p{
-        font-size: 1.02rem;
+        font-size: 1rem;
     }
 }
 
@@ -270,6 +271,10 @@ iframe{
 }
 
 @media (max-width: 850px){
+    #about{
+        margin: 35px auto;
+    }
+    
     #about h2{
         margin-bottom: 5px;
     }
@@ -302,7 +307,7 @@ iframe{
 .wcu-col {
     border-radius: 50px;
     text-align: center;
-    background: rgba(255, 67, 54, 0.05);
+    background: rgba(255, 67, 54, 0.035);
     padding: 42px 20px 25px;
     transition: 0.5s;
 }
@@ -335,7 +340,7 @@ iframe{
 
 @media(max-width: 500px) {
     .we h2{
-        margin: -15px auto 25px;
+        margin: -7px auto 22px;
     }
 
     .we-col {
@@ -401,7 +406,7 @@ iframe{
 
 @media (max-width: 650px) {
     .gallery .row{
-        margin-top: -15px;
+        margin-top: -22px;
     }
 
     .gallery-col {
@@ -451,7 +456,7 @@ iframe{
 .rev-col {
     border-radius: 45px;
     text-align: justify;
-    background: rgba(255, 67, 54, 0.05);
+    background: rgba(255, 67, 54, 0.035);
     padding: 20px;
     display: flex;
     transition: 0.5s;
@@ -541,11 +546,11 @@ iframe{
     }
 
     .contact a {
-        font-size: 1.02rem;
+        font-size: 1rem;
     }
     
-    em {
-        font-size: 1.02rem;
+    .em {
+        font-size: 1.1rem;
     }
 }
 
@@ -553,12 +558,12 @@ iframe{
 
 .footer{
     text-align: center;
-    margin-bottom: -5px;
+    margin: -10px auto -5px;
 }
 
 .sm-icons .fa{
     color: #ff4336;
-    margin: 12px 6px;
+    margin: 8px 6px 12px;
     cursor: pointer;
     font-size: 23px;
 }
