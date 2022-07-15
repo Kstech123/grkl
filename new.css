@@ -133,22 +133,22 @@ h1 {
     }
 
     h1{
-        top: 34%;
+        top: 31%;
         left: 50%;
-        font-size: 1.9rem;
+        font-size: 1.95rem;
     }
 }
 
 /* small screen */
 @media (max-width: 700px) {
     .logo {
-        top: 12px;
-        left: 10px;
+        top: 10px;
+        left: 5px;
     }
 
     .logo img{
-        width: 100px;
-        height: 75px;
+        width: 90px;
+        height: 70px;
     }
 
     .menu {
@@ -180,7 +180,7 @@ h1 {
     }
 
     .nav-links ul a {
-        font-size: 21px;
+        font-size: 20px;
         text-decoration: none;
     }
 
@@ -538,6 +538,14 @@ iframe{
 
     .or h4{
         margin: 20px 0px;
+    }
+
+    .contact a {
+        font-size: 1.02rem;
+    }
+    
+    em {
+        font-size: 1.02rem;
     }
 }
 
