@@ -129,13 +129,13 @@ h1 {
 
 @media (max-width: 450px){
     .hero{
-        height: 60vh;
+        height: 50vh;
     }
 
     h1{
         top: 34%;
         left: 50%;
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -147,8 +147,8 @@ h1 {
     }
 
     .logo img{
-        width: 70px;
-        height: 60px;
+        width: 100px;
+        height: 75px;
     }
 
     .menu {
@@ -180,7 +180,7 @@ h1 {
     }
 
     .nav-links ul a {
-        font-size: 23px;
+        font-size: 21px;
         text-decoration: none;
     }
 
