@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
     <title>Page Not Found!</title>
-    <link rel="icon" type="image/png" href="img/gurukul-logo.png">
-    <link rel="stylesheet" href="https://www.gurukulpachora.in/root.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/our-logo.png">
     <script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-  </head>
-  <body>
+<body>
 
-   <section class="sub-header navi">
-     <nav>
-       <a href="#"><img src="img/gurukul-logo.png" alt="our-logo" width="60px" height="60px" title="Home"></a>
-       <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" style="text-align: right; font-size: 30px; padding: 3% 6%; Cursor: text; Text-Decoration: None;" onclick="hideMenu()"></i>
-         <ul>
-           <li><a href="#about" class="hero-btn" onclick="hideMenu()">About</a></li>
-           <li><a href="#contact" class="hero-btn" onclick="hideMenu()">Contact</a></li>
-           <li><a href="#notice" class="hero-btn" onclick="hideMenu()">Notice</a></li>
-         </ul>
-       </div>
-       <i class="fa fa-bars" onclick="showMenu()"></i>
-     </nav>
-     <h1 class="qee">GURUKUL<br>INTERNATIONAL<br>SCHOOL</h1>
-   </section>
+    <!-- header -->
 
-<center style="margin: 50px 0px 20px 0px; color: #000;">
-  <h1>Oops!</h1>
-  <i class="fa fa-frown-o" style="font-size:100px; margin:15px 0px;"></i>
-  <p style="margin-bottom:20px;">Sorry, but the page you are looking for doesn't exist.</p>
-  <a href="https://www.gurukulpachora.in/" style="background: #f44336; color: #fff; padding: 12px 20px; border-radius: 50px;">Go To Home</a>
-</center>
+    <div class="hero">
+        <div class="logo"><img src="img/our-logo.png" alt="gurukul international school pachora's logo"
+                title="Our Logo"></div>
+        <div class="menu">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu();"></i>
+                <ul>
+                    <a href="https://www.gurukulpachora.in/#about" onclick="hideMenu()">
+                        <li>About</li>
+                    </a>
+                    <a href="https://www.gurukulpachora.in/#contact" onclick="hideMenu()">
+                        <li>Contact</li>
+                    </a>
+                    <a href="https://www.gurukulpachora.in/#gallery" onclick="hideMenu()">
+                        <li>Gallery</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu();"></i>
+        </div>
+    </div>
+    <div>
+        <h1>Gurukul<br>International<br>School</h1>
+    </div>
+    </div>
 
-   <!--Footer-->
+    <div style="margin: 50px 0px 20px 0px; text-align: center; color: #000;">
+        <i class="fa fa-frown-o" style="font-size:120px; margin-bottom: -30px;"></i>
+        <h2 style="font-size: 2.5rem;">Oops!</h2>
+        <p style="margin: -40px 0px 20px; font-size: 1.3rem;">Sorry, but the page you are looking for doesn't exist.</p>
+        <a href="https://www.gurukulpachora.in/"
+            style="background: #f44336; color: #fff; padding: 15px 20px; border-radius: 50px; font-size: 1.35rem; font-weight: 500;">Go To Home</a>
+    </div>
 
-   <section class="footer" data-aos="zoom-in-up">
-     <h4>FOLLOW US ON</h4>
-     <div class="icons" style="margin-top: 15px;">
-       <a href="https://facebook.com/GurukulSchoolPachora/"><i class="fa fa-facebook"></i></a>
-       <a href="https://www.instagram.com/_gurukul_school_pachora_/"><i class="fa fa-instagram"></i></a>
-       <a href="https://youtube.com/channel/UCLi7hr5FLt0rf7p-bttm64g"><i class="fab fa-youtube"></i></a>
-     </div>
-     <p>Copyright © 2021 GURUKUL. All Rights Reserved<br>
-     Made with <i class="fa fa-heart"></i> by KSTECH</p>
-   </section>
+    <!-- footer -->
 
-   <!--javascipt for toggle menu-->
-   <script>
+    <section class="footer">
+        <h4>FOLLOW US ON</h4>
+        <div class="sm-icons" style="margin: -5px 0px;">
+            <a href="https://www.facebook.com/GurukulSchoolPachora/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_gurukul_school_pachora_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCLi7hr5FLt0rf7p-bttm64g"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>Copyright © 2022 Gurukul School & Jr College. All Rights Reserved<br>
+            Made with <i class="fa fa-heart"></i> by KSTECH</p>
+    </section>
 
-   var navLinks = document.getElementById("navLinks")
-   function showMenu(){
-     navLinks.style.right = "0";
-   }
-   function hideMenu(){
-     navLinks.style.right = "100%";
-   }
-   </script>
+    <script>
 
-     </body>
-   </html>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            document.getElementById("h1").style.display = "none";
+        }
+        function hideMenu() {
+            navLinks.style.right = "100%";
+            document.getElementById("h1").style.display = "block";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
