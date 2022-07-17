@@ -25,14 +25,9 @@ body {
     margin: 0;
     padding: 0;
 }
-/* 
-h2 {
-    margin: 40px 0px 0px;
-    text-align: center;
-} */
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .line{
@@ -82,11 +77,11 @@ a{
 
 h2{
     text-align: center;
-    margin-top: 22px;
+    margin-top: 19px;
 }
 
 marquee{
-    height: 490px;
+    height: 470px;
     text-align: center;
     padding: 0px 10px;
 }
@@ -98,21 +93,20 @@ marquee{
     font-weight: 400;
 }
 
-.btogy{
-    color: #f44336;
+.btogy > p {
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
     background-color: #000;
-    display: block;
     width: 60%;
-    margin: 8px auto 5px;
+    margin: 6px auto 0px;
     border-radius: 50px;
-    padding: 20px auto !important;
+    padding: 8px 0px;
     transition: 0.5s;
 }
 
-.btogy:hover{
-    color: #fff;
+.btogy > p:hover{
+    color: #f44336;
 }
   </style>  
 </head>
@@ -124,14 +118,14 @@ marquee{
       <div class="white-dash" style="top: 33px; left: 0px;"></div>
       <h2>NOTICE</h2>
       <div class="white-dash" style="top: 33px; right: 0px;"></div>
-      <marquee direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+      <marquee direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
         <div class="mn"><a href="https://forms.gle/tCWu4UidxybMyKAJ9" style="color:#fff;">Online Admission Form for
-            Academic Year 2021-22</a><a href="https://www.google.com" class="btogy">
-            <div>Read More</div>
-          </a></div>
-        <div class="mn"><a href="https://chat.whatsapp.com/I2YSMozO5duI03DcCBdmKp" style="color:#fff;">Click here to
+            Academic Year 2021-22</a>
+            <a href="#about" class="btogy"><p>Read More</p></a>
+         </div>
+        <a href="https://chat.whatsapp.com/I2YSMozO5duI03DcCBdmKp" style="color:#fff;"><div class="mn">Click here to
             join our Watsapp
-            Group</a></div>
+            Group</div></a>
         <div class="mn">Ta on a clip to past it in the text box an
           other.</div>
       </marquee>
