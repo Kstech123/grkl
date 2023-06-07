@@ -405,7 +405,7 @@ iframe{
 /* gallery */
 
 .gallery .row {
-    max-width: 1350px;
+    max-width: 1320px;
     margin-top: -30px;
 }
 
@@ -429,7 +429,7 @@ iframe{
 @media (max-width: 650px) {
     .gallery .row{
         margin-top: -25px;
-        width: 95%;
+        width: 90%;
     }
 
     .gallery-col {
